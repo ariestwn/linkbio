@@ -44,7 +44,6 @@
 				<p class="">
 					Hello 👋, <br/>I'm Digital Marketer & Power Mac User.
 				</p>
-				<p class="mt-[1em]"><a href="https://" class="underline">Join my email list</a> for product updates and free stuff I make for other solo builders.</p>
 			</div>
 
 			<div class="flex items-center justify-center gap-10 py-6 mt-auto lg:py-0 md:justify-start">
