@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		%sveltekit.head%
+		<script>
+			// dark mode, follow user's system settings
+			(function () {
+				var savedMode = localStorage.getItem('darkMode');
+				if (savedMode === 'true' || (savedMode === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+					document.documentElement.classList.add('dark');
+				}
+			})();
+		</script>
+	</head>
+	<body class="font-sans text-base antialiased bg-light dark:bg-dark text-dark dark:text-light selection:bg-dark selection:text-light dark:selection:bg-light dark:selection:text-dark" data-sveltekit-preload-data="hover">
+		<div class="contents">%sveltekit.body%</div>
+	</body>
+</html>
